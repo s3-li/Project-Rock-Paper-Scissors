@@ -25,4 +25,24 @@ function playRound(playerSelection, computerSelection) {
     return `Sorry, you lose, ${computerSelection} beats ${playerSelection}`;
   }
 }
-console.log(playRound(playerSelection, computerSelection))
+
+
+// Create a new function called game(). Use the previous functions inside this one.
+function game() {
+  prompt("Pick rock, paper, or scissors to play")
+  function playRound(playerSelection, computerSelection) {
+    if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
+      return "You win! Rock beats scissors.";
+    } else if (playerSelection.toLowerCase() === "paper" && computerSelection === "rock") {
+      return "You win! Paper beats rock.";
+    } else if (playerSelection.toLowerCase() === "scissors" && computerSelection === "paper") {
+      return "You win! Scissors beats paper.";
+    } else if (playerSelection.toLowerCase() === computerSelection) {
+      return `It's a draw, you both picked ${computerSelection}`;
+    } else {
+      return `Sorry, you lose, ${computerSelection} beats ${playerSelection}`;
+    }
+  }
+  return playRound(playerSelection, computerSelection)
+}
+console.log(game());
