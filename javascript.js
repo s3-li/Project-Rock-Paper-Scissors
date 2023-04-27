@@ -14,15 +14,15 @@ const playerSelection = "rock";
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
-    return "You win!";
+    return "You win! Rock beats scissors.";
   } else if (playerSelection.toLowerCase() === "paper" && computerSelection === "rock") {
-    return "You win!";
+    return "You win! Paper beats rock.";
   } else if (playerSelection.toLowerCase() === "scissors" && computerSelection === "paper") {
-    return "You win!";
+    return "You win! Scissors beats paper.";
   } else if (playerSelection.toLowerCase() === computerSelection) {
-    return "It's a draw.";
+    return `It's a draw, you both picked ${computerSelection}`;
   } else {
-    return "You lose.";
+    return `Sorry, you lose, ${computerSelection} beats ${playerSelection}`;
   }
 }
 console.log(playRound(playerSelection, computerSelection))
