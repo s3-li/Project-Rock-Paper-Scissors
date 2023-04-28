@@ -10,7 +10,7 @@ function getComputerChoice() {
 
 // Create function to play a single round of Rock Paper Scissors.
 const computerSelection = getComputerChoice();
-const playerSelection = "rock";
+const playerSelection = "";
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
 
 // Create a new function called game(). Use the previous functions inside this one.
 function game() {
-  prompt("Pick rock, paper, or scissors to play")
+  const playerSelection = prompt("Pick rock, paper, or scissors to play")
   function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
       return "You win! Rock beats scissors.";
