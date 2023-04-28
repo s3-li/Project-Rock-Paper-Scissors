@@ -11,7 +11,7 @@ When both individuals have picked an object, they are compared against each othe
     • Paper beats rock.
     • Matching objects results in a draw.
 
-All of this will be played from within a web browser console, and only JavaScript will be required for this program at this stage.
+All of this will be played from within a web browser with the result displayed in the browser developer console. As such, and at this stage, only JavaScript will be required for this program.
 
 
 ## Plan
@@ -44,3 +44,8 @@ All of this will be played from within a web browser console, and only JavaScrip
 
 ### Output
     • The results will be displayed to the web browser console – a simple console.log(result) function should suffice.
+    
+## What I've learnt
+This is the first major project where I gained some insight into the methodologies of software development lifecycles. This project taught me how to analyse, plan, design and build a "Rock, Paper, Scissors" game in JavaScript. The importance of knowing and understanding the project allowed me to define what was required. From there, it was easier to identify the keys parts to implement within the program. By breaking down the intial problem, I found it became easier to address the smaller components and eventually bring together the concepts into something workable.
+
+Other things: defining variables, conditional statements, logical operators, defining functions, applying arguments, code checking, atomic commits.
